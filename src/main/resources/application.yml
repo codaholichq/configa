@@ -1,0 +1,34 @@
+server:
+  port: 8080
+
+spring:
+  thread-executor: virtual
+  application:
+    name: configa
+  rabbitmq:
+    host: ${RABBIT_HOST}
+    port: ${RABBIT_PORT}
+    username: ${RABBIT_USERNAME}
+    password: ${RABBIT_PASSWORD}
+    listener:
+      simple:
+        retry:
+          enabled: true
+          initial-interval: 45000
+          max-attempts: 5
+          multiplier: 1.3
+          max-interval: 80000
+        default-requeue-rejected: true
+  cloud:
+    bus:
+      enabled: true
+      refresh:
+        enabled: true
+    config:
+      server:
+        git:
+          uri: https://github.com/codaholichq/data
+          default-label: main
+      refresh:
+        additionalPropertySourcesToRetain:
+          - configServerClient
