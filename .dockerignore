@@ -1,0 +1,10 @@
+logs
+target
+gradle
+.idea
+
+.git
+.gitignore
+
+Dockerfile
+.dockerignore
