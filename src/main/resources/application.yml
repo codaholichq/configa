@@ -5,6 +5,14 @@ spring:
   thread-executor: virtual
   application:
     name: configa
+  main:
+    banner-mode: off
+  devtools:
+    restart:
+      enabled: false
+  output:
+    ansi:
+      enabled: ALWAYS
 #  rabbitmq:
 #    host: ${RABBIT_HOST}
 #    port: ${RABBIT_PORT}
@@ -32,3 +40,8 @@ spring:
       refresh:
         additionalPropertySourcesToRetain:
           - configServerClient
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
