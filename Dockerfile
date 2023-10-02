@@ -4,7 +4,7 @@ LABEL maintainer="codaholic.com"
 WORKDIR /app
 COPY . /
 
-RUN gradle clean build --no-daemon -x test
+RUN gradle build
 
 # Package stage
 FROM amazoncorretto:17-alpine@sha256:a4ce01ba9e9b7127c33c2aa03e81b0c65a0d522b6ab92ad2491b4e7fdacae8ce
