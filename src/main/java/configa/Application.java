@@ -1,4 +1,4 @@
-package codaholic.configa;
+package configa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
