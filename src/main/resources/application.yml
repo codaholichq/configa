@@ -7,9 +7,6 @@ spring:
     name: configa
   main:
     banner-mode: off
-  devtools:
-    restart:
-      enabled: false
   output:
     ansi:
       enabled: ALWAYS
@@ -37,6 +34,7 @@ spring:
         git:
           uri: https://github.com/codaholichq/data
           default-label: main
+          clone-on-start: true
       refresh:
         additionalPropertySourcesToRetain:
           - configServerClient
