@@ -1,3 +1,5 @@
+- add proper description for project
+- add a change log
 - add docker compose
 - ignore .mvn and .env*
 - refactor: use a new banner
