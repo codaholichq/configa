@@ -1,0 +1,30 @@
+- add docker compose
+- ignore .mvn and .env*
+- refactor: use a new banner
+- add project banner
+- add documentation
+- remove devtools settings and enable clone-on-start
+- use Java v21 and enable virtual threads
+- change Gradle workflow to Maven workflow
+- change build tool from Gradle to Maven
+- upgrade spring boot from 3.1.4 to 3.1.5
+- use amd64 architecture image
+- run gradle with a deamon
+- run as root
+- add working directory
+- add dockerfile compatible with Render
+- temporary disable virtual threads
+- optimize Dockerfile
+- optimize build file
+- add GitHub actions
+- ignore .gradle
+- disable spring boot logo
+- add custom logging pattern
+- optimize build
+- add Dockerfile
+- change build tool from maven to gradle
+- disable rabbitmq temporary
+- remove aws related packages
+- add awssdk
+- add aws-lambda-java-core
+- first commit
