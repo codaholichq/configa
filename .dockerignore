@@ -1,7 +1,6 @@
 logs
 target
-.gradle
-gradle
+.mvn
 .idea
 
 .git
