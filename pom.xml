@@ -15,7 +15,7 @@
 	<version>0.0.1</version>
 	<name>configa</name>
 
-	<description>This project helps community managers manage their communities efficiently</description>
+	<description>Config Server for Spring Boot Microservice</description>
 
 	<properties>
 		<java.version>21</java.version>
