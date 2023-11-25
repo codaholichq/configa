@@ -2,7 +2,9 @@ server:
   port: 8080
 
 spring:
-  thread-executor: virtual
+  threads:
+    virtual:
+      enabled: true
   application:
     name: configa
   main:
@@ -25,6 +27,8 @@ spring:
 #          max-interval: 80000
 #        default-requeue-rejected: true
   cloud:
+    compatibility-verifier:
+      enabled: false
     bus:
       enabled: false
       refresh:
