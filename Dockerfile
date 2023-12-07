@@ -9,7 +9,7 @@ RUN --mount=type=cache,target=/root/.m2 mvn install -Dmaven.test.skip=true
 RUN mkdir -p target/deps && (cd target/deps; jar -xf ../libs/*-0.0.1.jar)
 
 # Package stage
-FROM amazoncorretto:17-alpine@sha256:0770cab734f259b1f68060bd543aab1e217f1634d7bbac76c09996a1a9bf723b
+FROM amazoncorretto:21-alpine@sha256:696d03bfaeae332077e0ed579845c692949567944837dd99dd2f4fce405c806e
 RUN apk add --no-cache dumb-init
 RUN addgroup --system javauser && adduser -S -s /bin/false -G javauser javauser
 
